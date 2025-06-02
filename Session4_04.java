@@ -31,11 +31,11 @@ public class Session4_04 {
         System.out.println();
 
         // Đảo ngược mảng
-        for (int i = 0; i < size / 2; i++) {
+       for (int i = 0, j=size-1; i<j ; i++, j--) {
             // Hoán đổi phần tử
             int temp = array[i];
-            array[i] = array[size - 1 - i];
-            array[size - 1 - i] = temp;
+            array[i] = array[j];
+            array[j] = temp;
         }
 
         // Hiển thị mảng sau khi đảo ngược
